@@ -51,12 +51,12 @@ namespace MongoStoreAPI.Controllers
         // For Authenticatinon with JWT
         [AllowAnonymous]
         [HttpPost]
-        [HttpPost]
+        // [HttpPost]
         [Route("register")]
         public ActionResult<User> Register(User user)
         {
             service.Create(user);
-            return Ok(user);
+            return Ok(user);    
         }
     }
 }
